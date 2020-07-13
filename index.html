@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos web</title>
+    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Oswald"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/curso.js"></script>
+   
+  </head>
+  <body>
+    <header class="principal_image">
+      <div class="principal_image_bacground">
+        <h1 class="titles" id="principal_title">CURSO DE DISEÑO WEB</h1>
+      </div>
+      
+    </header>
+    <section id="section1" class="section">
+      <div class="image_schedule">
+        <figure class="allusive_image"><img src="./assets/img/imagenAlusiva.jpg"/></figure>
+        <article>
+          <h3 class="titles">CALENDARIO 2020/21</h3>
+          <div id="schedule"></div>
+        </article>
+      </div>
+      <div class="information">
+        <h2 class="titles">INFORMACIÓN</h2>
+        <p id="description" class="paragraph">Aprenda a desarrollar web junto a un equipo de magníficos expertos que le ayudarán en este camino</p> 
+        <article >
+          <h3 class="titles">MODALIDADES</h3>
+          <p class="paragraph">Elige la modalidad que más se adapte a sus necesidades</p>
+          <div class="type_course">
+            <div class="online"><p class="mode">ONLINE</p><p>350€</p><p>6 meses</p></p></div>
+            <div class="semipresential"><p class="mode">SEMIPRESENCIAL</p><p>650€</p><p>4 meses</p></p></div>
+            <div class="presential"><p class="mode">PRESENCIAL</p><p>950€</p><p>2 meses</p></p></div>
+          </div>
+        </article>
+        <article>
+          <h3 class="titles">FORMULARIO</h3>
+          <p class="paragraph">Rellene el siguiente formulario si está interesado en el curso y nos pondremos en contacto con usted lo antes posible</p>
+          <p class="paragraph">Disponemos de gran cantidad de horarios para que elija el que mejor se adapte a sus necesidades</p>
+          <form id="form" method="GET" onsubmit="return validate()">
+            <div id="name_second_name">
+              <div id="name" class="name">
+                <label class="label" for="name">Nombre</label>
+                <input
+                  class="input"
+                  type="text"
+                  id="name"
+                  required="required"
+                  placeholder="Juan José"
+                  name="name"
+                />
+              </div>
+              <div class="name">
+                <label class="label" for="second_name">Apellidos</label>
+                <input
+                  class="input"
+                  type="text"
+                  id="second_name"
+                  required="required"
+                  placeholder="Senit Velasco"
+                  name="second_name"
+                />
+              </div>
+            </div>
+            <div class="form_div">
+              <label class="label" for="email">Email</label>
+              <input
+                class="input"
+                type="email"
+                id="email"
+                required="required"
+                placeholder="juanjo@gmail.com"
+                name="email"
+              />
+            </div>
+            <div class="form_div">
+              <label class="label" for="city">Provincia</label>
+              <select class="input" id="city"></select>
+            </div>
+            <div class="div_checkbox">
+              <input type="checkbox" id="checkbox" />
+              <label class="label"
+                >He leído y acepto el <a id="conditions" onclick="aceptarCondiciones(event)" >aviso legal</a> y la <a id="privacity" onclick="aceptarCondiciones(event)">política de
+                  privacidad</a></label
+              >
+            </div>
+            <div id="div_privacity">
+              <figure id="close" onclick="out()" ><img  id="close_image" src="./assets/img/cerrar.png"/></figure>
+            </div>
+            <div>
+              <input type="submit" id="send" class="button" value="ENVIAR" />
+            </div>
+          </form>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="section2">
+      <h2 class="titles" id="title_section2">OPINIONES DE USUARIOS</h3>
+        <article class="section2">
+          <div>
+            <p id="opinion1" class="opinion"></p>
+            <p id="user1"></p>
+          </div>
+          <div>
+            <p id="opinion2" class="opinion"></p>
+            <p id="user2"></p>
+          </div>
+          <div>
+            <p id="opinion3" class="opinion"></p>
+            <p id="user3"></p>
+          </div>
+        </article>
+      </section>
+      <footer class="footer">
+        <div class="block_footer">
+          <div >
+            <div class="social_networks">
+              <figure class="figure_social_networks" onclick="socialNetworks(event)"><img src="./assets/img/facebook.png"/></figure>
+              <figure class="figure_social_networks" onclick="socialNetworks(event)"><img src="./assets/img/instagram.png"/></figure>
+              <figure class="figure_social_networks" onclick="socialNetworks(event)"><img src="./assets/img/twitter.png"/></figure>
+            </div>
+            <address class="address">
+              <p>Centro Internacional Universitario de Negocios, Innovación y Tecnología</p>
+              <p>Calle Alfonso Rodríguez Santamaría 19, Madrid, España</p>
+            </address>
+            <p>info@iunit.edu.es   |   (+34) 914 419 242   |   (+34) 910 604 413</p>
+          </div>
+          <div>
+            <p>Centro universitario adscrito a:</p>
+            <p>Universidad Rey Juan Carlos</p>
+          </div>
+        </div>
+      </footer>
+      <!--
+ Created on Wed Jul 01 2020
+
+ Copyright (c) 2020 Juan José Senit Velasco
+-->
+
+  </body>
+</html>
